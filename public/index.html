@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="nav-bar">
-    <img src="./image/reddit-logo.png" alt="reddit" class="logo">
+    <img src="./assets/reddit-logo.png" alt="reddit" class="logo">
     <div class="search-box">
       <i class="fa fa-search" id="search-icon" aria-hidden="true"></i>
       <input type="text" class="search-input" placeholder="Search Reddit">
@@ -22,5 +22,27 @@
       <i class="fa fa-caret-down" aria-hidden="true"></i>
     </div>
   </div>
+  <!--signup box pop up-------------------------->
+  <div class="signup-container">
+    <div class="img">
+      <img src="../public/assets/signimg.png">
+    </div>
+    <div class="form-container">
+      <h2>Sign Up</h2>
+      <p class="signup-paragraph">By continuing, you are setting up a Reddit account and agree to our User Agreement and Privacy Policy.</p>
+      <form class="form">
+        <label for="email">Email</label>
+        <input type="text" name="email">
+        <label for="password">Password</label>
+        <input type="password" name="password">
+        <button type="submit" class="form-submit">Continue</button>
+      </form>
+      <p class="after-submit">Already a redditor?<a href="#">LOG IN</a></p>
+    </div>
+    <div class="spacer">
+      <i class="fa fa-times close" aria-hidden="true"></i>
+    </div>
+    <script src="../public/js/index.js"></script>
+  </div>  
 </body>
 </html>
