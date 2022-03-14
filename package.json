@@ -6,7 +6,7 @@
   "scripts": {
     "start": "NODE_ENV=production node server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server"
+    "dev": "NODE_ENV=dev nodemon server"
   },
   "repository": {
     "type": "git",
@@ -27,8 +27,11 @@
     "nodemon": "^2.0.15"
   },
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
     "env2": "^2.2.2",
     "express": "^4.17.3",
+    "joi": "^17.6.0",
     "pg": "^8.7.3"
   }
 }
