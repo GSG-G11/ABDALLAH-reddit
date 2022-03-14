@@ -18,3 +18,5 @@ CREATE TABLE posts (
 
 INSERT INTO users (user_name,email,password) VALUES ('admin','admin@gmail.com','$2a$10$urn5eKcywoWsV1pXS9Dp/.KMwkv6PjZd1nBD7JrhIZhvFiDCgMly.');
 INSERT INTO posts (posts_content) VALUES ('this is the first post this is the first post');
+
+COMMIT;
