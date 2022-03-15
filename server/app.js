@@ -9,6 +9,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '..', 'public')));
-app.set('port', process.env.port || 5050);
+app.set('port', process.env.port || 5550);
 app.use(router);
 module.exports = app;
