@@ -21,7 +21,7 @@ const signUpController = (req, res) => {
     })
     .then(() => hash(password, 10))
     .then((hashedPassword) => addUser({ userName, email, hashedPassword }))
-    .then((data) => res.json({ message: 'signed up successfuly...' }))
+    .then(() => res.json({ message: 'signed up successfuly...' }))
     .catch((err) => res.status(400).json(err.message));
 };
 module.exports = signUpController;
