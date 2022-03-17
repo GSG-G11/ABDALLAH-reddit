@@ -23,14 +23,14 @@
     </div>
   </div>
   <!--signup box pop up-------------------------->
-  <div class="signup-container">
+  <div class="signup-container" id="signup-container">
     <div class="img">
       <img src="./assets/signimg.png">
     </div>
     <div class="form-container">
       <h2>Sign Up</h2>
       <p class="signup-paragraph">By continuing, you are setting up a Reddit account and agree to our User Agreement and Privacy Policy.</p>
-      <form class="form signup-form">
+      <form class="form signup-form" id="signup-form">
         <label for="userName">User Name</label>
         <input type="text" name="userName">
         <label for="email">Email</label>
@@ -42,10 +42,33 @@
       <p class="after-submit">Already a redditor?<a href="#">LOG IN</a></p>
     </div>
     <div class="spacer">
-      <i class="fa fa-times close" aria-hidden="true"></i>
+      <i class="fa fa-times close" aria-hidden="true" id="close-signup"></i>
     </div>
     
   </div> 
+
+
+    <!-----signin box pop up-------------------------->
+    <div class="signup-container" id="signin-container">
+      <div class="img">
+        <img src="./assets/signimg.png">
+      </div>
+      <div class="form-container">
+        <h2>Sign In</h2>
+        <form class="form" id="signin-form">
+          <label for="userName">User Name</label>
+          <input type="text" name="userName">
+          <label for="password">Password</label>
+          <input type="password" name="password">
+          <button type="submit" class="form-submit">Log In</button>
+        </form>
+        <p class="after-submit">New to Reddit?<a href="#">SIGN UP</a></p>
+      </div>
+      <div class="spacer">
+        <i class="fa fa-times close" aria-hidden="true" id="close-signin"></i>
+      </div>
+      
+    </div> 
   <script src="./js/index.js"></script> 
 </body>
 </html>

@@ -124,3 +124,9 @@ font-size: 18px;
 .close:hover{
   cursor: pointer;
 }
+#signin-form input{
+  width: 100%;
+}
+#close-signin{
+  margin: 0 0 0 530px;
+}
