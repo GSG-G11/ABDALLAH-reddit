@@ -47,7 +47,7 @@ signupForm.addEventListener('submit', (e) => {
     .then((data) => console.log(data))
     .catch((err) => console.log(err));
 });
-/////////////////////////////////////////
+/// //////////////////////////////////////
 signinForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const signInData = {
