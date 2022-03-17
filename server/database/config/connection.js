@@ -6,7 +6,7 @@ const {
 
 let dbUrl = '';
 
-let ssl = false;
+// let ssl = false;
 
 switch (NODE_ENV) {
   case 'dev':
@@ -17,9 +17,6 @@ switch (NODE_ENV) {
     break;
   default:
     dbUrl = DATABASE_URL;
-    ssl = {
-      rejectUnauthorized: false,
-    };
 }
 
 if (!dbUrl) {
@@ -28,7 +25,10 @@ if (!dbUrl) {
 
 const options = {
   connectionString: dbUrl,
-  ssl,
+  ssl:
+    process.env.NODE_ENV === 'production'
+      ? { rejectUnauthorized: false }
+      : false,
 };
 
 const connection = new Pool(options);
