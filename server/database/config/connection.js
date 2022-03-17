@@ -25,10 +25,9 @@ if (!dbUrl) {
 
 const options = {
   connectionString: dbUrl,
-  ssl:
-    process.env.NODE_ENV === 'production'
-      ? { rejectUnauthorized: false }
-      : false,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 };
 
 const connection = new Pool(options);
